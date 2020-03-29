@@ -15,8 +15,8 @@ LABEL maintainer="CrazyMax" \
   org.label-schema.vendor="CrazyMax" \
   org.label-schema.schema-version="1.0"
 
-ENV RTORRENT_VERSION=0.9.8 \
-  LIBTORRENT_VERSION=0.13.8 \
+ENV RTORRENT_VERSION=0.9.6 \
+  LIBTORRENT_VERSION=0.13.6 \
   XMLRPC_VERSION=01.55.00 \
   LIBSIG_VERSION=2.10.1 \
   CARES_VERSION=1.14.0 \
