@@ -2,11 +2,6 @@
 throttle.min_peers.normal.set = 1
 throttle.max_peers.normal.set = 100
 
-# Enable/disable peer exchange for torrents that aren't marked private. Disabled by default. (peer_exchange)
-protocol.pex.set = 1
-
-dht.mode.set = auto
-
 # Same as above but for seeding completed torrents (-1 = same as downloading)
 throttle.min_peers.seed.set = 1
 throttle.max_peers.seed.set = 50
@@ -34,7 +29,7 @@ protocol.pex.set = yes
 pieces.hash.on_completion.set = yes
 
 # Set whether the client should try to connect to UDP trackers
-trackers.use_udp.set = no
+#trackers.use_udp.set = yes
 
 # Set the max amount of memory address space used to mapping file chunks. This refers to memory mapping, not
 # physical memory allocation. Default: 1GB (max_memory_usage)
@@ -47,7 +42,7 @@ trackers.use_udp.set = no
 
 # Encryption options, set to none (default) or any combination of the following:
 # allow_incoming, try_outgoing, require, require_RC4, enable_retry, prefer_plaintext
-protocol.encryption.set = none
+protocol.encryption.set = allow_incoming,try_outgoing,enable_retry
 
 # Set the umask for this process, which is applied to all files created by the program
 system.umask.set = 0022
